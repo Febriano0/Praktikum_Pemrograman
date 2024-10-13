@@ -1,0 +1,8 @@
+pertemuan52 : pertemuan_5_2.o
+		g++ -o pertemuan52 pertemuan_5_2.o
+
+pertemuan_5_2.o : pertemuan_5_2.cpp
+		g++ -c pertemuan_5_2.cpp
+
+clean: 
+	rm -f pertemuan52 pertemuan_5_2.o
