@@ -1,12 +1,12 @@
-#include <iostream>
-#include <vector>
+#include<iostream>
+#include<vector>
 using namespace std;
 void fizzbuzz(){
     int n; cin>>n;
     vector<string> h;
     h.reserve(n);
 
-    for(int i=1; i<=n; ++i) {
+    for(int i=1; i<=n; ++i){
         if(i%3 == 0 && i%5 == 0){
             h.push_back("FizzBuzz");
         }else if(i%3 == 0){
@@ -17,7 +17,7 @@ void fizzbuzz(){
             h.push_back(to_string(i));
         }
     }
-    for(const auto & h : h) {
+    for(const auto & h : h){
         cout<<h<<endl;
     }
     return 0;
@@ -44,4 +44,8 @@ vector<int> reverseVector(const vector<int>& h){
     }
     cout<<endl;
     return 0;
+}
+int main(){
+    fizzbuzz();
+    reverse();
 }
