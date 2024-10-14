@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
-int main(){
+void fizzbuzz(){
     int n; cin>>n;
     vector<string> h;
     h.reserve(n);
